@@ -1,0 +1,43 @@
+<h1>Admin</h1>
+<form>
+  <div class="form-group">
+    <label for="address" class="col-sm-3 control-label">My Address</label>
+    <div class="col-sm-6">
+      <input #address type="text" id="address" class="form-control" readonly="readonly">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="addr1" class="col-sm-3 control-label">Address</label>
+    <div class="col-sm-6">
+      <input #addr1 type="text" id="addr1" class="form-control">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="role1" class="col-sm-3 control-label">Role</label>
+    <div class="col-sm-6">
+      <input #role1 type="text" id="role1" class="form-control" readonly="readonly">
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <button type="submit" class="btn btn-primary" (click)='getRole($event)'>Get Role</button>
+  </div>
+  <div class="form-group">
+    <label for="addr2" class="col-sm-3 control-label">Address</label>
+    <div class="col-sm-6">
+      <input #addr2 type="text" id="addr2" class="form-control">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="roles" class="col-sm-3 control-label">Role</label>
+    <div class="col-sm-6">
+      <select #role2 class="form-control" id="roles">
+        <option value="Forwarder">Forwarder</option>
+        <option value="Carrier">Carrier</option>
+        <option value="Shipper">Shipper</option>
+      </select>
+  </div>
+  </div>
+  <div class="col-sm-6">
+    <button type="submit" class="btn btn-primary" (click)='setRole($event)'>Set Role</button>
+  </div>
+</form>

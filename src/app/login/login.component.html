@@ -1,0 +1,12 @@
+<h1>Login</h1>
+<form>
+  <div class="form-group">
+    <label for="address" class="col-sm-3 control-label">Address</label>
+    <div class="col-sm-6">
+      <input #address type="text" id="address" class="form-control">
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <button type="submit" class="btn btn-primary" (click)='login($event)'>Login</button>
+  </div>
+</form>

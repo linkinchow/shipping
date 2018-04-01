@@ -1,0 +1,57 @@
+<h1>Carrier</h1>
+<form>
+  <div class="form-group">
+    <label for="address" class="col-sm-3 control-label">My Address</label>
+    <div class="col-sm-6">
+      <input #address type="text" id="address" class="form-control" readonly="readonly">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="order_id" class="col-sm-3 control-label">Order ID</label>
+    <div class="col-sm-6">
+      <input #orderId type="text" id="order_id" class="form-control">
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <button type="submit" class="btn btn-primary" (click)='onRetrieve($event)'>Retrieve</button>
+  </div>
+  <div class="form-group">
+    <label for="container_no" class="col-sm-3 control-label"># of Containers</label>
+    <div class="col-sm-6">
+      <input #containerNo type="text" id="container_no" class="form-control" readonly="readonly">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="commodity" class="col-sm-3 control-label">Commodity</label>
+    <div class="col-sm-6">
+      <input #commodity type="text" id="commodity" class="form-control" readonly="readonly">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-3 control-label">Shipping Order Filename</label>
+    <div class="col-sm-6">
+      <a #orderFile target='_blank'></a>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="timestamp" class="col-sm-3 control-label">Shipping Order Timestamp</label>
+    <div class="col-sm-6">
+      <input #timestamp type="text" id="timestamp" class="form-control" readonly="readonly">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="files" class="col-sm-3 control-label">Booking Confirmation Letter</label>
+    <div class="col-sm-6">
+      <input type="file" id="files" class="form-control-file" (change)='fileChange($event)'>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="filename" class="col-sm-3 control-label">Filename</label>
+    <div class="col-sm-6">
+      <input #filename type="text" id="filename" class="form-control" readonly="readonly">
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <button type="submit" class="btn btn-primary" (click)='onSubmit($event)'>Confirm</button>
+  </div>
+</form>

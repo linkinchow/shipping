@@ -1,0 +1,57 @@
+<h1>Shipper</h1>
+<form>
+  <div class="form-group">
+    <label for="address" class="col-sm-3 control-label">Address</label>
+    <div class="col-sm-6">
+      <input #address type="text" id="address" class="form-control" readonly="readonly">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="order_id" class="col-sm-3 control-label">Order ID</label>
+    <div class="col-sm-6">
+      <input #orderId type="text" id="order_id" class="form-control">
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <button type="submit" class="btn btn-primary" (click)='onRetrieve($event)'>Retrieve</button>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-3 control-label">Confirmation Letter Filename</label>
+    <div class="col-sm-6">
+      <a #confirmFile target='_blank'></a>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="timestamp" class="col-sm-3 control-label">Confirmation Letter Timestamp</label>
+    <div class="col-sm-6">
+      <input #timestamp type="text" id="timestamp" class="form-control" readonly="readonly">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="shipper_name" class="col-sm-3 control-label">Shipper Name</label>
+    <div class="col-sm-6">
+      <input #shipperName type="text" id="shipper_name" class="form-control">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="invoice_no" class="col-sm-3 control-label">Invoice Number</label>
+    <div class="col-sm-6">
+      <input #invoiceNo type="text" id="invoice_no" class="form-control">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="bank" class="col-sm-3 control-label">Bank</label>
+    <div class="col-sm-6">
+      <input #bank type="text" id="bank" class="form-control">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="account_no" class="col-sm-3 control-label">Account Number</label>
+    <div class="col-sm-6">
+      <input #accountNo type="text" id="account_no" class="form-control">
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <button type="submit" class="btn btn-primary" (click)='onSubmit($event)'>Submit</button>
+  </div>
+</form>
